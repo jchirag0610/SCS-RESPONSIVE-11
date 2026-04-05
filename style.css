@@ -245,6 +245,69 @@ main .team-header h4 i {
 }
 main .team-cards {
   grid-area: team-cards;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+}
+main .team-cards .team-member1 {
+  background: url("assets/images/member1.webp");
+}
+main .team-cards .team-member2 {
+  background: url("assets/images/member2.webp");
+}
+main .team-cards .team-member3 {
+  background: url("assets/images/member3.webp");
+}
+main .team-cards .member-card {
+  width: 100%;
+  border-radius: 1rem;
+  opacity: 80%;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+main .team-cards .member-card .top-icons {
+  text-align: end;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+main .team-cards .member-card .top-icons i {
+  border: 1px solid #3D3939;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  background-color: rgba(41, 41, 41, 0.0666666667);
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #fff;
+  font-weight: 100;
+  backdrop-filter: blur(1rem);
+}
+main .team-cards .member-card .bottom-info {
+  background: rgba(18, 18, 18, 0);
+  width: 100%;
+  backdrop-filter: blur(1rem);
+  padding: 1.2rem 1rem;
+  color: #fff;
+  font-family: chillax-regular;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .team-cards .member-card .bottom-info h4 {
+  font-size: 1.2rem;
+}
+main .team-cards .member-card .bottom-info p {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 main .card7 {
   grid-area: card7;
