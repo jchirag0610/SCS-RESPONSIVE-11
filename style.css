@@ -38,7 +38,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
-  grid-template-areas: "header header" "card1 card2" "stats stats" "card4 card3" "card5 card6" "team-header team-header" "team-cards team-cards" "card7 card8" "contact-banner contact-banner" "footer-left footer-right-top" "footer-left footer-right-bottom";
+  grid-template-areas: "header header" "card1 card2" "stats stats" "card4 card3" "card5 card6" "team-header team-header" "team-cards team-cards" "card7 card8" "contact-banner contact-banner" "footer footer";
 }
 main .item {
   background: #ccc;
@@ -383,13 +383,37 @@ main .contact-banner .get-in-touch {
   font-weight: 600;
   white-space: nowrap;
 }
-main .section14 {
-  grid-area: footer-left;
+main .footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "footer-left footer-right-top" "footer-left footer-right-bottom";
+  gap: 1rem;
 }
-main .section15 {
+main .footer .footer-left {
+  grid-area: footer-left;
+  background: #1E1E1E;
+  border-radius: 1rem;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30rem;
+}
+main .footer .footer-left i {
+  border: 1px solid #3D3939;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #2E2E2E;
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: #F4F2ED;
+}
+main .footer .footer-right-top {
   grid-area: footer-right-top;
 }
-main .footer-right-bottom {
+main .footer .footer-right-bottom {
   grid-area: footer-right-bottom;
   color: #fff;
   background: #1E1E1E;
@@ -400,20 +424,20 @@ main .footer-right-bottom {
   justify-content: space-between;
   align-items: center;
 }
-main .footer-right-bottom h3 {
+main .footer .footer-right-bottom h3 {
   font-size: 1rem;
   color: #92918E;
   font-weight: 400;
 }
-main .footer-right-bottom h3 span {
+main .footer .footer-right-bottom h3 span {
   color: #F4F2ED;
   border-bottom: 1px solid #F4F2ED;
 }
-main .footer-right-bottom .right-link h3 {
+main .footer .footer-right-bottom .right-link h3 {
   color: #F4F2ED;
   font-weight: 400;
 }
-main .footer-right-bottom .right-link i {
+main .footer .footer-right-bottom .right-link i {
   border: 1px solid #3D3939;
   border-radius: 2rem;
   padding: 0.6rem;
