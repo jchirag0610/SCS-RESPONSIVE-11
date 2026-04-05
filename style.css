@@ -125,6 +125,7 @@ main .card2 h4 i {
   padding: 1rem;
   background-color: #292929;
   font-size: 1rem;
+  margin-right: 1rem;
 }
 main .stats {
   grid-area: stats;
@@ -247,9 +248,47 @@ main .team-cards {
 }
 main .card7 {
   grid-area: card7;
+  border-radius: 1rem;
+  background: none;
+}
+main .card7 img {
+  width: 100%;
+  border-radius: 1rem;
 }
 main .card8 {
   grid-area: card8;
+  background: rgba(255, 255, 255, 0.0509803922);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem;
+}
+main .card8 h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #F4F2ED;
+  text-transform: uppercase;
+  font-family: chillax-regular;
+}
+main .card8 h4 {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-family: Roboto Mono, sans-serif;
+  margin-top: 2rem;
+  color: #F4F2ED;
+}
+main .card8 h4 i {
+  border: 1px solid #3D3939;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #292929;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+main .card8 .header-content h4 {
+  color: #92918E;
 }
 main .section13 {
   grid-area: contact-banner;

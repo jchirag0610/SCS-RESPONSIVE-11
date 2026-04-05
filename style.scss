@@ -161,6 +161,8 @@ main {
                 padding: 1rem;
                 background-color: #292929;
                 font-size: 1rem;
+                margin-right: 1rem;
+
             }
 
         }
@@ -309,7 +311,7 @@ main {
                 padding: 1rem;
                 background-color: #292929;
                 font-size: 1rem;
-                margin-right:1rem;
+                margin-right: 1rem;
             }
 
         }
@@ -319,13 +321,70 @@ main {
         grid-area: team-cards;
     }
 
+
     .card7 {
         grid-area: card7;
+        border-radius: 1rem;
+        background: none;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
     }
 
     .card8 {
+
         grid-area: card8;
+        background: #ffffff0d;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem;
+
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 500;
+            color: #F4F2ED;
+            text-transform: uppercase;
+            font-family: chillax-regular;
+
+        }
+
+        h4 {
+
+            letter-spacing: 0.1rem;
+            font-size: 0.8rem;
+            font-family: Roboto Mono, sans-serif;
+            margin-top: 2rem;
+            color: #F4F2ED;
+
+
+            i {
+                border: 1px solid #3D3939;
+                border-radius: 2rem;
+                padding: 1rem;
+                background-color: #292929;
+                font-size: 1rem;
+                margin-right: 1rem;
+
+            }
+
+        }
+
+        .header-content {
+            h4 {
+                color: #92918E;
+            }
+        }
+
+
     }
+
 
     .section13 {
         grid-area: contact-banner;
