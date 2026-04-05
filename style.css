@@ -94,7 +94,7 @@ main .card2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 4rem;
+  padding: 3rem;
 }
 main .card2 h1,
 main .card2 h3,
