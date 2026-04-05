@@ -10,6 +10,14 @@
   font-family: vmf;
   src: url(assets/fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
 }
+/* latin */
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v31/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +90,44 @@ main .card2 {
   grid-area: card2;
   background: rgba(255, 255, 255, 0.0509803922);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem;
+}
+main .card2 h1,
+main .card2 h3,
+main .card2 h4 {
+  color: #F4F2ED;
+  font-family: satoshi-light;
+}
+main .card2 h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #F4F2ED;
+  text-transform: uppercase;
+}
+main .card2 h3 {
+  color: #92918E;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+main .card2 h4 {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-family: Roboto Mono, sans-serif;
+  margin-top: 2rem;
+}
+main .card2 .link a {
+  text-decoration: none;
+}
+main .card2 .link h4 i {
+  border: 1px solid #3D3939;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #292929;
+  font-size: 1rem;
 }
 main .section4 {
   grid-area: stats;
