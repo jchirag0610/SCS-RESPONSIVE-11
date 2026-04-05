@@ -136,6 +136,7 @@ main .section4 {
   align-items: center;
   font-family: satoshi-light;
   background: none;
+  padding: 3rem 0;
 }
 main .section4 h2 {
   font-size: 3.5rem;
