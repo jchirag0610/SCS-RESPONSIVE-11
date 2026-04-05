@@ -155,30 +155,20 @@ main {
             font-family: Roboto Mono, sans-serif;
             margin-top: 2rem;
 
-        }
-
-
-        .link {
-            a {
-                text-decoration: none;
+            i {
+                border: 1px solid #3D3939;
+                border-radius: 2rem;
+                padding: 1rem;
+                background-color: #292929;
+                font-size: 1rem;
             }
 
-            h4 {
-                i {
-                    border: 1px solid #3D3939;
-                    border-radius: 2rem;
-                    padding: 1rem;
-                    background-color: #292929;
-                    font-size: 1rem;
-                }
-
-            }
         }
 
     }
 
 
-    .section4 {
+    .stats {
         grid-area: stats;
         display: flex;
         justify-content: space-around;
@@ -192,6 +182,7 @@ main {
             font-size: 3.5rem;
             font-weight: 600;
             color: #F4F2ED;
+            font-family: chillax-regular;
         }
 
         h4 {
@@ -234,7 +225,8 @@ main {
         }
     }
 
-    .card4,.card6 {
+    .card4,
+    .card6 {
 
         background: #ffffff0d;
         border-radius: 1rem;
@@ -284,19 +276,54 @@ main {
 
 
 
-    .section9 {
+    .team-header {
         grid-area: team-header;
+
+        background: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #F4F2ED;
+            text-transform: uppercase;
+            font-family: chillax-regular;
+
+        }
+
+        h4 {
+
+            letter-spacing: 0.1rem;
+            font-size: 0.8rem;
+            font-family: Roboto Mono, sans-serif;
+            margin-top: 2rem;
+            color: #F4F2ED;
+
+
+            i {
+                border: 1px solid #3D3939;
+                border-radius: 2rem;
+                padding: 1rem;
+                background-color: #292929;
+                font-size: 1rem;
+                margin-right:1rem;
+            }
+
+        }
     }
 
-    .section10 {
+    .team-cards {
         grid-area: team-cards;
     }
 
-    .section11 {
+    .card7 {
         grid-area: card7;
     }
 
-    .section12 {
+    .card8 {
         grid-area: card8;
     }
 
