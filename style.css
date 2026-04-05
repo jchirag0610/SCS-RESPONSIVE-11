@@ -386,7 +386,7 @@ main .contact-banner .get-in-touch {
 main .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-areas: "footer-left footer-right-top" "footer-left footer-right-bottom";
   gap: 1rem;
 }
@@ -394,12 +394,11 @@ main .footer .footer-left {
   grid-area: footer-left;
   background: #1E1E1E;
   border-radius: 1rem;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 30rem;
 }
 main .footer .footer-left i {
   border: 1px solid #3D3939;
@@ -412,6 +411,44 @@ main .footer .footer-left i {
 }
 main .footer .footer-right-top {
   grid-area: footer-right-top;
+  background: #1E1E1E;
+  border-radius: 1rem;
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10rem;
+}
+main .footer .footer-right-top .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+main .footer .footer-right-top h3 {
+  color: #F4F2ED;
+  font-family: "satoshi-light";
+}
+main .footer .footer-right-top h4 {
+  color: #92918E;
+  font-family: "satoshi-light";
+}
+main .footer .footer-right-top .link-more-templates {
+  background: #CEBD63;
+  color: #1A1A1A;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  padding: 0.9rem 1.2rem;
+  border-radius: 0.4rem;
+  font-family: satoshi-light;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+main .footer .footer-right-top .link-more-templates:hover {
+  background: #AD9D49;
 }
 main .footer .footer-right-bottom {
   grid-area: footer-right-bottom;
@@ -440,8 +477,8 @@ main .footer .footer-right-bottom .right-link h3 {
 main .footer .footer-right-bottom .right-link i {
   border: 1px solid #3D3939;
   border-radius: 2rem;
-  padding: 0.6rem;
+  padding: 1rem;
   background-color: #292929;
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-left: 0.2rem;
 }/*# sourceMappingURL=style.css.map */
