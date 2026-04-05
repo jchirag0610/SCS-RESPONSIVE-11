@@ -1,0 +1,168 @@
+@font-face {
+    font-family: satoshi-light;
+    src: url(assets/fonts/63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
+
+@font-face {
+    font-family: chillax-regular;
+    src: url(assets/fonts/63cffc0a3942456e003bc265_Chillax-Regular.woff);
+}
+
+@font-face {
+    font-family: vmf;
+    src: url(assets/fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #121212;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+
+    grid-template-areas: "header header"
+        "card1 card2"
+        "stats stats"
+        "card3 card4"
+        "card5 card6"
+        "team-header team-header"
+        "team-cards team-cards"
+        "card7 card8"
+        "contact-banner contact-banner"
+        "footer-left footer-right-top"
+        "footer-left footer-right-bottom";
+
+    .item {
+        background: #ccc;
+    }
+
+    .header {
+        grid-area: header;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background: none;
+
+        nav {
+            display: flex;
+            gap: 0.6rem;
+            
+
+            a {
+                padding:1rem;
+                color: #F4F2ED;
+                text-decoration: none;
+                padding: 0.9rem 1.2rem;
+                border-radius: 0.4rem;
+                font-family: satoshi-light;
+                font-size: 0.875rem;
+                font-weight: 600;
+                letter-spacing: 0.1rem;
+                background: #ffffff0d;
+            }
+
+            a:hover {
+                background: #2A2A2A;
+            }
+
+            .link-get-in-touch {
+                background: #CEBD63;
+                color: #1A1A1A;
+                font-weight: 600;
+
+                &:hover {
+                    background: #AD9D49;
+                }
+            }
+        }
+    }
+
+    .card1 {
+        grid-area: card1;
+        border-radius: 1rem;
+        background: none;
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    .card2 {
+        grid-area: card2;
+
+        background: #ffffff0d;
+        border-radius: 1rem;
+    }
+
+
+    .section4 {
+        grid-area: stats;
+    }
+
+    .section5 {
+        grid-area: card3;
+    }
+
+    .section6 {
+        grid-area: card4;
+    }
+
+    .section7 {
+        grid-area: card5;
+    }
+
+    .section8 {
+        grid-area: card6;
+    }
+
+    .section9 {
+        grid-area: team-header;
+    }
+
+    .section10 {
+        grid-area: team-cards;
+    }
+
+    .section11 {
+        grid-area: card7;
+    }
+
+    .section12 {
+        grid-area: card8;
+    }
+
+    .section13 {
+        grid-area: contact-banner;
+    }
+
+    .section14 {
+        grid-area: footer-left;
+    }
+
+    .section15 {
+        grid-area: footer-right-top;
+    }
+
+    .section16 {
+        grid-area: footer-right-bottom;
+    }
+
+}
