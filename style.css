@@ -1,18 +1,18 @@
 @font-face {
-  font-family: satoshi-light;
+  font-family: "satoshi-light";
   src: url(assets/fonts/63cffc20aa8997095067596f_Satoshi-Light.woff);
 }
 @font-face {
-  font-family: chillax-regular;
+  font-family: "chillax-regular";
   src: url(assets/fonts/63cffc0a3942456e003bc265_Chillax-Regular.woff);
 }
 @font-face {
-  font-family: vmf;
+  font-family: "vmf";
   src: url(assets/fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
 }
 /* latin */
 @font-face {
-  font-family: "Roboto Mono";
+  font-family: "roboto-mono";
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/robotomono/v31/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2) format("woff2");
@@ -116,7 +116,7 @@ main .card2 h3 {
 main .card2 h4 {
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
-  font-family: Roboto Mono, sans-serif;
+  font-family: "roboto-mono", sans-serif;
   margin-top: 2rem;
 }
 main .card2 h4 i {
@@ -210,7 +210,7 @@ main .card4 h4,
 main .card6 h4 {
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
-  font-family: Roboto Mono, sans-serif;
+  font-family: "roboto-mono", sans-serif;
   margin-top: 2rem;
 }
 main .team-header {
@@ -231,7 +231,7 @@ main .team-header h2 {
 main .team-header h4 {
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
-  font-family: Roboto Mono, sans-serif;
+  font-family: "roboto-mono", sans-serif;
   margin-top: 2rem;
   color: #F4F2ED;
 }
@@ -338,7 +338,7 @@ main .card8 h2 {
 main .card8 h4 {
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
-  font-family: Roboto Mono, sans-serif;
+  font-family: "roboto-mono", sans-serif;
   margin-top: 2rem;
   color: #F4F2ED;
 }
@@ -353,8 +353,35 @@ main .card8 h4 i {
 main .card8 .header-content h4 {
   color: #92918E;
 }
-main .section13 {
+main .contact-banner {
   grid-area: contact-banner;
+  background: #CEBD63;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3rem;
+}
+main .contact-banner h3 {
+  font-family: satoshi-light;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+main .contact-banner h2 {
+  font-size: 5rem;
+  font-family: chillax-regular;
+  font-weight: 300;
+  line-height: 6rem;
+  width: 80%;
+}
+main .contact-banner .get-in-touch {
+  font-family: "roboto-mono";
+  background: #000;
+  padding: 1rem 2rem;
+  color: #F4F2ED;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 main .section14 {
   grid-area: footer-left;
