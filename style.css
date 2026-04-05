@@ -38,7 +38,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
-  grid-template-areas: "header header" "card1 card2" "stats stats" "card3 card4" "card5 card6" "team-header team-header" "team-cards team-cards" "card7 card8" "contact-banner contact-banner" "footer-left footer-right-top" "footer-left footer-right-bottom";
+  grid-template-areas: "header header" "card1 card2" "stats stats" "card4 card3" "card5 card6" "team-header team-header" "team-cards team-cards" "card7 card8" "contact-banner contact-banner" "footer-left footer-right-top" "footer-left footer-right-bottom";
 }
 main .item {
   background: #ccc;
@@ -149,17 +149,65 @@ main .section4 h4 {
   font-size: 1rem;
   text-align: center;
 }
-main .section5 {
+main .card3 {
   grid-area: card3;
 }
-main .section6 {
+main .card4 {
   grid-area: card4;
 }
-main .section7 {
+main .card5 {
   grid-area: card5;
 }
-main .section8 {
+main .card6 {
   grid-area: card6;
+}
+main .card3,
+main .card5 {
+  border-radius: 1rem;
+  background: none;
+}
+main .card3 img,
+main .card5 img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .card4, main .card6 {
+  background: rgba(255, 255, 255, 0.0509803922);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem;
+}
+main .card4 h1,
+main .card4 h3,
+main .card4 h4, main .card6 h1,
+main .card6 h3,
+main .card6 h4 {
+  color: #F4F2ED;
+  font-family: satoshi-light;
+}
+main .card4 h1, main .card6 h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #F4F2ED;
+  text-transform: uppercase;
+}
+main .card4 h3, main .card6 h3 {
+  color: #92918E;
+  padding: 1rem 3rem 1rem 0;
+  font-size: 1.3rem;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+main .card4 h4, main .card6 h4 {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-family: Roboto Mono, sans-serif;
+  margin-top: 2rem;
 }
 main .section9 {
   grid-area: team-header;
