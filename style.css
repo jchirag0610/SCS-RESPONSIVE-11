@@ -389,6 +389,34 @@ main .section14 {
 main .section15 {
   grid-area: footer-right-top;
 }
-main .section16 {
+main .footer-right-bottom {
   grid-area: footer-right-bottom;
+  color: #fff;
+  background: none;
+  font-family: "satoshi-light";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+main .footer-right-bottom h3 {
+  font-size: 1rem;
+  color: #92918E;
+  font-weight: 400;
+}
+main .footer-right-bottom h3 span {
+  color: #F4F2ED;
+  border-bottom: 1px solid #F4F2ED;
+}
+main .footer-right-bottom .right-link h3 {
+  color: #F4F2ED;
+  font-weight: 400;
+}
+main .footer-right-bottom .right-link i {
+  border: 1px solid #3D3939;
+  border-radius: 2rem;
+  padding: 0.6rem;
+  background-color: #292929;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
 }/*# sourceMappingURL=style.css.map */
