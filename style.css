@@ -392,12 +392,13 @@ main .section15 {
 main .footer-right-bottom {
   grid-area: footer-right-bottom;
   color: #fff;
-  background: none;
+  background: #1E1E1E;
+  border-radius: 1rem;
+  padding: 2.5rem 1rem;
   font-family: "satoshi-light";
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
 }
 main .footer-right-bottom h3 {
   font-size: 1rem;
