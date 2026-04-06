@@ -486,7 +486,7 @@ main .footer .footer-right-bottom .right-link i {
   margin-left: 0.2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   main {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -604,5 +604,125 @@ main .footer .footer-right-bottom .right-link i {
   }
   main .footer .footer-right-bottom h3 {
     text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    grid-template-areas: "header" "card1" "card2" "stats" "card3" "card4" "card5" "card6" "team-header" "team-cards" "card7" "card8" "contact-banner" "footer";
+  }
+  main .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "footer-left" "footer-right-top" "footer-right-bottom";
+    gap: 1rem;
+  }
+  main .footer .footer-left {
+    flex-direction: row;
+  }
+  main .card2,
+  main .card4,
+  main .card6 {
+    padding: 1.8rem;
+    gap: 2rem;
+  }
+  main .card2 h3,
+  main .card4 h3,
+  main .card6 h3 {
+    font-size: 1.3rem;
+    -moz-column-count: 1;
+         column-count: 1;
+    padding: 1rem 0rem;
+  }
+  main .card2 h4,
+  main .card4 h4,
+  main .card6 h4 {
+    font-size: 1rem;
+  }
+  main .card2 h1,
+  main .card4 h1,
+  main .card6 h1 {
+    font-size: 2.5rem;
+  }
+  main .card2 .header-content h4 {
+    padding-top: 1rem;
+  }
+  main .card8 {
+    padding: 1.8rem;
+    gap: 2rem;
+  }
+  main .card8 h2 {
+    font-size: 2.5rem;
+  }
+  main .card4 h3,
+  main .card6 h3 {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+  main .card8 h4 {
+    font-size: 1rem;
+  }
+  main .card8 .header-content h4 {
+    font-size: 1rem;
+  }
+  main .stats {
+    padding: 1rem 0rem;
+  }
+  main .stats h4 {
+    font-size: 0.8rem;
+  }
+  main .stats h2 {
+    font-size: 1.5rem;
+  }
+  main .stats div {
+    text-align: center;
+  }
+  main nav .a-link {
+    display: none;
+  }
+  main .team-cards .member-card {
+    padding: 0.4rem;
+  }
+  main .team-cards .member-card .bottom-info {
+    padding: 0.6rem 1rem;
+  }
+  main .team-cards .member-card .bottom-info h4 {
+    font-size: 1rem;
+  }
+  main .team-cards .member-card .bottom-info p {
+    font-size: 0.8rem;
+  }
+  main .team-cards .member-card .top-icons i {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+  }
+  main .team-header {
+    padding: 1rem 0;
+  }
+  main .team-header h2 {
+    font-size: 2.5rem;
+  }
+  main .team-header h4 {
+    display: none;
+  }
+  main .contact-banner {
+    flex-direction: column;
+    align-items: normal;
+    gap: 2rem;
+  }
+  main .contact-banner h2 {
+    font-size: 2.5rem;
+    width: 100%;
+    line-height: 3rem;
+  }
+  main .contact-banner .get-in-touch {
+    font-size: 1rem;
+  }
+  main .footer .footer-right-top {
+    gap: 5rem;
+  }
+  main .footer .footer-right-bottom {
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
