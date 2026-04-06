@@ -159,6 +159,7 @@ main {
             letter-spacing: 0.1rem;
             font-size: 0.8rem;
             font-family: 'roboto-mono', sans-serif;
+            padding-top:1rem;
 
             i {
                 border: 1px solid #3D3939;
@@ -649,27 +650,24 @@ main {
     }
 }
 
-@media (max-width:640px) {
+@media (min-width: 769px) and (max-width:1200px) {
     main {
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
         padding: 1rem;
 
-        grid-template-areas: "header"
-            "card1"
-            "card2"
-            "stats"
-            "card3"
-            "card4"
-            "card5"
-            "card6"
-            "team-header"
-            "team-cards"
-            "card7"
-            "card8"
-            "contact-banner"
-            "footer";
+        grid-template-areas: "header header"
+            "card1 card2"
+            "card4 card2"
+            "card4 card3"
+            "card5 card6"
+            "stats card6"
+            "card7 card8"
+            "team-header card8"
+            "team-cards team-cards"
+            "contact-banner contact-banner"
+            "footer footer";
 
         .footer {
             grid-template-columns: 1fr;
@@ -686,6 +684,7 @@ main {
         .card2,
         .card4,
         .card6 {
+            justify-content: flex-start;
             padding: 1.8rem;
             gap: 2rem;
 
@@ -721,6 +720,13 @@ main {
             font-size: 2.5rem;
         }
 
+        .card4,
+        .card6 {
+            h3 {
+
+                column-count: 1;
+            }
+        }
 
         .card8 h4 {
 
@@ -733,6 +739,7 @@ main {
 
 
         .stats {
+            flex-direction: column;
             padding: 1rem 0rem;
 
             h4 {
@@ -753,24 +760,33 @@ main {
         }
 
         .team-cards {
-            display: inline-block;
-
             .member-card {
-                padding: 1rem;
+                padding: 0.4rem;
+                justify-content: flex-end;
+
+                .top-icons {
+                    text-align: center;
+                }
+
             }
 
             .member-card .bottom-info {
+                flex-direction: column;
+                justify-content: center;
+
+                padding: 0.6rem 1rem;
+
                 h4 {
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
 
                 p {
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                 }
             }
 
             .member-card .top-icons i {
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
 
         }
@@ -805,24 +821,19 @@ main {
         }
 
         .footer .footer-right-top {
-            flex-direction: column;
             gap: 5rem;
         }
 
         .footer .footer-right-bottom {
-            flex-direction: column;
-            gap: 2rem;
             margin-bottom: 1rem;
 
-            h3 {
-                text-align: center;
-            }
         }
     }
 
 }
 
-@media (max-width:768px) {
+
+@media (min-width:641px) and (max-width:768px) {
     main {
 
         grid-template-columns: 1fr;
@@ -935,14 +946,22 @@ main {
         .team-cards {
             .member-card {
                 padding: 0.4rem;
+                justify-content: flex-end;
+
+                .top-icons {
+                    text-align: center;
+                }
             }
 
             .member-card .bottom-info {
+                flex-direction: column;
+                justify-content: center;
 
                 padding: 0.6rem 1rem;
 
                 h4 {
-                    font-size: 1rem;
+                    font-size: 0.8rem;
+                    text-align: center;
                 }
 
                 p {
@@ -993,6 +1012,185 @@ main {
         .footer .footer-right-bottom {
             margin-bottom: 1rem;
 
+        }
+    }
+
+}
+
+
+@media (max-width:640px) {
+    main {
+
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+
+        grid-template-areas: "header"
+            "card1"
+            "card2"
+            "stats"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "team-header"
+            "team-cards"
+            "card7"
+            "card8"
+            "contact-banner"
+            "footer";
+
+        .footer {
+            grid-template-columns: 1fr;
+            grid-template-areas: "footer-left"
+                "footer-right-top"
+                "footer-right-bottom";
+            gap: 1rem;
+
+            .footer-left {
+                flex-direction: row;
+            }
+        }
+
+        .card2,
+        .card4,
+        .card6 {
+            padding: 1.8rem;
+            gap: 2rem;
+
+            h3 {
+
+                font-size: 1.3rem;
+                column-count: 1;
+                padding: 1rem 0rem;
+            }
+
+            h4 {
+
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+
+        }
+
+        .card2 .header-content h4 {
+            padding-top: 1rem;
+        }
+
+        .card8 {
+            padding: 1.8rem;
+            gap: 2rem;
+        }
+
+        .card8 h2 {
+            font-size: 2.5rem;
+        }
+
+
+        .card8 h4 {
+
+            font-size: 1rem;
+        }
+
+        .card8 .header-content h4 {
+            font-size: 1rem;
+        }
+
+
+        .stats {
+            padding: 1rem 0rem;
+
+            h4 {
+                font-size: 0.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            div {
+                text-align: center;
+            }
+        }
+
+        nav .a-link {
+            display: none;
+        }
+
+        .team-cards {
+            display: inline-block;
+
+            .member-card {
+                padding: 1rem;
+                justify-content: flex-end;
+
+                .top-icons {
+                    text-align: center;
+                }
+            }
+
+            .member-card .bottom-info {
+                h4 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .member-card .top-icons i {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .team-header {
+            padding: 1rem 0;
+        }
+
+        .team-header h2 {
+            font-size: 2.5rem;
+        }
+
+        .team-header h4 {
+            display: none;
+        }
+
+
+        .contact-banner {
+            flex-direction: column;
+            align-items: normal;
+            gap: 2rem;
+        }
+
+        .contact-banner h2 {
+            font-size: 2.5rem;
+            width: 100%;
+            line-height: 3rem;
+        }
+
+        .contact-banner .get-in-touch {
+            font-size: 1rem;
+        }
+
+        .footer .footer-right-top {
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .footer .footer-right-bottom {
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 1rem;
+
+            h3 {
+                text-align: center;
+            }
         }
     }
 
